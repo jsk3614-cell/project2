@@ -15,4 +15,16 @@ public class ArticleListViewResponse {
         this.title = article.getTitle();
         this.content = article.getContent();
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getContent() {
+        return content;
+    }
 }

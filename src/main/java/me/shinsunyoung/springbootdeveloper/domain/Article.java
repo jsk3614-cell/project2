@@ -42,6 +42,49 @@ public class Article {
         this.content = content;
     }
 
+    public static ArticleBuilder builder() {
+        return new ArticleBuilder();
+    }
+
+    public static class ArticleBuilder {
+        private String title;
+        private String content;
+
+        public ArticleBuilder title(String title) {
+            this.title = title;
+            return this;
+        }
+
+        public ArticleBuilder content(String content) {
+            this.content = content;
+            return this;
+        }
+
+        public Article build() {
+            return new Article(title, content);
+        }
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public LocalDateTime getUpdatedAt() {
+        return updatedAt;
+    }
+
     public void update(String title, String content) {
         this.title = title;
         this.content = content;

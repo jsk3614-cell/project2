@@ -1,0 +1,6 @@
+.gradle/
+build/
+gradle-8.5/
+.idea/
+*.class
+*.log

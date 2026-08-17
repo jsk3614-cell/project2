@@ -13,4 +13,12 @@ public class ArticleResponse {
         this.title = article.getTitle();
         this.content = article.getContent();
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getContent() {
+        return content;
+    }
 }
